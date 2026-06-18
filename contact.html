@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - Pädagogische Begleitung</title>
+  <meta name="description" content="Kontaktformular, E-Mail und Telefonnummer für eine erste Anfrage zur pädagogischen Begleitung von Kindern und Jugendlichen.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Startseite"><span class="brand__name">Pädagogische Begleitung</span><span class="brand__subline">Kinder und Jugendliche</span></a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation"><a href="index.html">Startseite</a><a href="about.html">Über mich</a><a href="services.html">Angebot</a><a class="is-active" href="contact.html">Kontakt</a></nav>
+      <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile Navigation"><a href="index.html">Startseite</a><a href="about.html">Über mich</a><a href="services.html">Angebot</a><a class="is-active" href="contact.html">Kontakt</a></nav>
+  </header>
+
+  <main>
+    <section class="subhero subhero--simple">
+      <div class="container narrow reveal"><p class="eyebrow">Kontakt</p><h1>Ein ruhiger erster Schritt.</h1><p class="lead">Schreiben Sie mir gerne, worum es geht. Ich melde mich zeitnah zurück und wir besprechen, ob und wie eine Begleitung sinnvoll sein kann.</p></div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <aside class="contact-info reveal">
+          <h2>Kontaktmöglichkeiten</h2>
+          <div class="contact-item"><span>E-Mail</span><a href="mailto:kontakt@paedagogin.de">kontakt@paedagogin.de</a></div>
+          <div class="contact-item"><span>Telefon</span><a href="tel:+49123456789">+49 (0) 123 456789</a></div>
+          <div class="contact-item"><span>Adresse</span><p>Musterstraße 12<br>10115 Berlin</p></div>
+          <div class="notice-box"><h3>Sprechzeiten</h3><p>Montag bis Freitag nach Vereinbarung. Wenn ich im Termin bin, rufe ich zurück.</p></div>
+        </aside>
+
+        <form class="contact-form reveal" id="contact-form">
+          <h2>Nachricht schreiben</h2>
+          <div class="form-row"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+          <div class="form-row"><label for="email">E-Mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="form-row"><label for="phone">Telefon</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="form-row"><label for="subject">Betreff</label><input id="subject" name="subject" type="text"></div>
+          <div class="form-row"><label for="message">Nachricht</label><textarea id="message" name="message" rows="7" required></textarea></div>
+          <button class="btn btn--primary" type="submit">Kontakt aufnehmen</button>
+          <p class="form-note">Ihre Angaben werden vertraulich behandelt. Hinweise finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container faq-grid">
+        <div class="section-heading reveal"><p class="eyebrow">Ablauf</p><h2>Was nach Ihrer Anfrage passiert.</h2></div>
+        <div class="faq-list reveal">
+          <article><h3>Rückmeldung</h3><p>Ich antworte auf Ihre Anfrage und kläre offene organisatorische Fragen.</p></article>
+          <article><h3>Erstes Gespräch</h3><p>Wir sprechen über die aktuelle Situation, das Anliegen und mögliche Erwartungen an eine Begleitung.</p></article>
+          <article><h3>Gemeinsame Entscheidung</h3><p>Wenn es fachlich und persönlich passt, vereinbaren wir den Rahmen für die weitere Zusammenarbeit.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><strong>Pädagogische Begleitung</strong><p>Individuelle Unterstützung für Kinder, Jugendliche und Eltern mit fachlicher Ruhe, Klarheit und Verlässlichkeit.</p></div><div><strong>Seiten</strong><a href="index.html">Startseite</a><a href="about.html">Über mich</a><a href="services.html">Angebot</a><a href="contact.html">Kontakt</a></div><div><strong>Kontakt</strong><p><a href="mailto:kontakt@paedagogin.de">kontakt@paedagogin.de</a><br><a href="tel:+49123456789">+49 (0) 123 456789</a></p><p class="footer-note">Termine nach Vereinbarung.</p></div><div><strong>Rechtliches</strong><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div></div></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{
+  "website": {
+    "title": "Pädagogische Begleitung",
+    "description": "Professionelle, individuelle Begleitung für Kinder und Jugendliche",
+    "author": "Pädagogin Name",
+    "contact": {
+      "email": "kontakt@paedagogin.de",
+      "phone": "+49 (0) 123 456789",
+      "address": "Musterkstraße 123, 10115 Berlin"
+    },
+    "colors": {
+      "primary": "#8ba888",
+      "primary_dark": "#6b8a6a",
+      "primary_light": "#b5c7af",
+      "background": "#faf9f6",
+      "accent": "#e8dcc8",
+      "text_dark": "#3a3a3a",
+      "text_light": "#6b6b6b"
+    },
+    "pages": {
+      "home": {
+        "title": "Startseite",
+        "file": "index.html",
+        "hero_image": "https://images.unsplash.com/photo-1516534775068-bb57a52f4fee"
+      },
+      "about": {
+        "title": "Über mich",
+        "file": "about.html",
+        "portrait_image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+      },
+      "services": {
+        "title": "Angebot",
+        "file": "services.html"
+      },
+      "contact": {
+        "title": "Kontakt",
+        "file": "contact.html"
+      }
+    },
+    "seo": {
+      "keywords": "Pädagogik, Begleitung, Kinder, Jugendliche, Entwicklung, Persönlichkeit",
+      "language": "de"
+    },
+    "design": {
+      "mobile_breakpoints": {
+        "sm": "480px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1440px"
+      },
+      "spacing": {
+        "xs": "0.5rem",
+        "sm": "1rem",
+        "md": "1.5rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "2xl": "4rem"
+      }
+    }
+  }
+}
