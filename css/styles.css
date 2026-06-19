@@ -366,6 +366,43 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.7rem); line-height: 1.18; }
   border-radius: clamp(1.15rem, 3vw, 1.8rem);
   box-shadow: 0 24px 70px rgba(65, 55, 43, 0.09);
 }
+.legal-section {
+  background: linear-gradient(180deg, #f3e8d8, #fbf7ef);
+}
+.legal-panel {
+  max-width: 920px;
+  padding: clamp(1.6rem, 4vw, 2.8rem);
+  background: rgba(255, 253, 248, 0.82);
+  border: 1px solid rgba(139, 119, 93, 0.24);
+  border-radius: clamp(1.15rem, 3vw, 1.8rem);
+  box-shadow: 0 24px 70px rgba(65, 55, 43, 0.10);
+}
+.legal-panel section {
+  padding-block: clamp(1.1rem, 3vw, 1.65rem);
+  border-bottom: 1px solid rgba(139, 119, 93, 0.18);
+}
+.legal-panel section:first-child {
+  padding-top: 0;
+}
+.legal-panel section:last-of-type {
+  border-bottom: 0;
+}
+.legal-panel h2 {
+  margin-bottom: 0.6rem;
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+}
+.legal-panel h3 {
+  margin: 1rem 0 0.25rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  font-weight: 500;
+  color: var(--ink);
+}
+.legal-updated {
+  margin: clamp(1rem, 3vw, 1.5rem) 0 0;
+  color: var(--stone);
+  font-size: 0.95rem;
+}
 .subhero--portrait .subhero__text { align-self: start; padding-top: clamp(1rem, 2.5vw, 2rem); }
 .subhero--portrait .subhero__text h1 { font-size: clamp(2.65rem, 6vw, 4.7rem); }
 .subhero--portrait .subhero__text p { max-width: 620px; }
