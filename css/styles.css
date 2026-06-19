@@ -206,9 +206,19 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.7rem); line-height: 1.18; }
 .hero__content .lead { max-width: 690px; margin-bottom: 1.8rem; color: #453f37; text-shadow: 0 1px 14px rgba(251,247,239,0.34); }
 
 .intro-grid, .split-layout, .subhero-grid, .contact-grid, .faq-grid { display: grid; gap: clamp(2rem, 6vw, 4.5rem); }
+.intro-section .section-heading {
+  align-self: stretch;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.intro-section .section-heading h2 {
+  align-self: center;
+  hyphens: none;
+}
 .intro-text { max-width: 680px; }
 .intro-section .intro-grid,
 .home-offer-panel {
+  position: relative;
   padding: clamp(1.35rem, 4vw, 2.6rem);
   background: rgba(255, 253, 248, 0.66);
   border: 1px solid rgba(139, 119, 93, 0.22);
@@ -632,6 +642,11 @@ input:focus, textarea:focus { outline: 3px solid rgba(184,143,114,0.22); border-
   border-top: 6px solid rgba(184,143,114,0.65);
 }
 .footer-grid { display: grid; gap: clamp(1.8rem, 4vw, 3rem); }
+.footer-identity {
+  margin-bottom: clamp(1.8rem, 4vw, 2.8rem);
+  padding-bottom: clamp(1.4rem, 3vw, 2rem);
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
 .site-footer strong {
   display: block;
   margin-bottom: 0.95rem;
@@ -641,8 +656,31 @@ input:focus, textarea:focus { outline: 3px solid rgba(184,143,114,0.22); border-
   font-weight: 500;
 }
 .site-footer p, .site-footer a { color: rgba(255,255,255,0.76); font-size: 0.98rem; }
+.footer-identity strong {
+  margin-bottom: 0.35rem;
+  font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+}
+.footer-identity p {
+  margin: 0;
+  max-width: 420px;
+  color: rgba(255,255,255,0.68);
+}
+.footer-copyright {
+  margin-top: clamp(1.8rem, 4vw, 2.8rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+.footer-copyright p {
+  margin: 0;
+  color: rgba(255,255,255,0.46);
+  font-size: 0.9rem;
+}
 .site-footer a { display: block; width: fit-content; margin-bottom: 0.55rem; }
 .site-footer a:hover { color: var(--white); }
+.footer-grid > div:nth-child(3) a {
+  line-height: 1.55;
+  margin-bottom: 0;
+}
 .footer-note { margin-top: -0.4rem; font-size: 0.9rem !important; color: rgba(255,255,255,0.58) !important; }
 .about-page .footer-grid {
   width: min(100% - (var(--space) * 2), var(--container));
@@ -802,6 +840,15 @@ input:focus, textarea:focus { outline: 3px solid rgba(184,143,114,0.22); border-
 @media (min-width: 1440px) {
   .nav-shell { width: min(100% - 4rem, 1320px); }
   .hero__content { width: min(100% - 4rem, 1120px); }
+}
+@media (max-width: 767px) {
+  .intro-section .section-heading h2 {
+    font-size: clamp(1.95rem, 8.2vw, 2.25rem);
+    line-height: 1.08;
+  }
+  .home-offer-panel .card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 389px) {
   .brand__name { font-size: 1rem; }
