@@ -62,7 +62,7 @@
 
       const subject = `${subjectValue} - ${name}`;
       const body = [`Name: ${name}`, `E-Mail: ${email}`, phone ? `Telefon: ${phone}` : "Telefon: nicht angegeben", "", message].join("\n");
-      window.location.href = `mailto:kontakt@paedagogin.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:fabio26012809@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }
 });
