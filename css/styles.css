@@ -2,7 +2,7 @@
   --sage: #8b9f86;
   --sage-dark: #657a61;
   --sage-soft: #eef1e8;
-  --cream: #fbf7ef;
+  --cream: #f6eee3;
   --cream-deep: #f3eadc;
   --sand: #eadcc8;
   --sand-soft: #f7f0e6;
@@ -57,13 +57,18 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.7rem); line-height: 1.18; }
 }
 .lead { font-size: clamp(1.08rem, 2.2vw, 1.35rem); color: var(--warm-gray); line-height: 1.75; }
 .section { padding: clamp(4rem, 9vw, 7.5rem) 0; }
-.section--soft { background: linear-gradient(180deg, #f0e2cf, #fbf7ef); }
+.section--soft { background: linear-gradient(180deg, #f3e8d8, #eadcc8); }
 .section--cream { background: linear-gradient(180deg, #efe0cd, #f5e9d9); }
+.home-page .intro-section { background: linear-gradient(180deg, #f3e8d8, #eadcc8); }
+.home-page .intro-section + .section--soft { background: linear-gradient(180deg, #eadcc8, #f3e8d8); }
+.services-page .subhero { background: linear-gradient(180deg, #eee1cf, #e7d6bf); }
+.services-page .section--soft { background: linear-gradient(180deg, #f3e8d8, #eadcc8); }
+.services-process-section { background: linear-gradient(180deg, #eadcc8, #f3e8d8); }
 .audience-section { background: linear-gradient(180deg, #eadcc8, #f0e4d4); padding-top: clamp(3.5rem, 7vw, 5.5rem); }
-.intro-section { background: linear-gradient(180deg, #eadcc8, #f1e5d5); }
+.intro-section { background: linear-gradient(180deg, #f3e8d8, #eadcc8); }
 .intro-section { padding-bottom: clamp(2.5rem, 5vw, 4rem); }
 .intro-section + .section--soft { padding-top: clamp(2.5rem, 5vw, 4rem); }
-.approach-section { background: linear-gradient(180deg, #f7f0e6, #fbf7ef); }
+.approach-section { background: linear-gradient(180deg, #eadcc8, #f3e8d8); }
 .section-heading { max-width: 760px; }
 .section-heading--center { margin: 0 auto clamp(2rem, 5vw, 3.25rem); text-align: center; }
 .section-heading--center p:last-child { margin-inline: auto; max-width: 680px; }
@@ -356,7 +361,7 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.7rem); line-height: 1.18; }
   padding-bottom: clamp(2.5rem, 5vw, 4rem);
 }
 .contact-options-section {
-  background: linear-gradient(180deg, #f3e8d8, #fbf7ef);
+  background: linear-gradient(180deg, #f3e8d8, #eadcc8);
 }
 .contact-page .section--soft .contact-stack,
 .contact-options-section .contact-stack {
@@ -367,7 +372,7 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.7rem); line-height: 1.18; }
   box-shadow: 0 24px 70px rgba(65, 55, 43, 0.09);
 }
 .legal-section {
-  background: linear-gradient(180deg, #f3e8d8, #fbf7ef);
+  background: linear-gradient(180deg, #f3e8d8, #eadcc8);
 }
 .legal-panel {
   max-width: 920px;
@@ -418,7 +423,7 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.7rem); line-height: 1.18; }
 .subhero--portrait .portrait-panel { min-height: clamp(520px, 58vw, 760px); }
 .subhero--portrait .portrait-panel img { aspect-ratio: auto; object-position: center center; }
 .timeline-section { background: linear-gradient(180deg, #f3e8d8, #eadcc8); padding-block: clamp(4.5rem, 9vw, 7rem); }
-.dog-companion-section { background: linear-gradient(180deg, #eadcc8, #fbf7ef); }
+.dog-companion-section { background: linear-gradient(180deg, #eadcc8, #f3e8d8); }
 .timeline-section > .container {
   padding: clamp(1.35rem, 4vw, 2.6rem);
   background: rgba(255, 253, 248, 0.62);

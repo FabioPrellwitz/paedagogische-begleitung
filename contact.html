@@ -24,10 +24,12 @@
 
     <section class="section contact-form-section">
       <div class="container contact-stack">
-        <form class="contact-form reveal" id="contact-form">
+        <form class="contact-form reveal" id="contact-form" action="https://formsubmit.co/fabio26012809@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Neue Anfrage über die Website">
+          <input type="hidden" name="_captcha" value="false">
           <h2>Nachricht schreiben</h2>
           <div class="form-row"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
-          <div class="form-row"><label for="email">E-Mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="form-row"><label for="email">E-Mail</label><input id="email" name="email" type="email" autocomplete="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" required></div>
           <div class="form-row"><label for="phone">Telefon (Optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
           <div class="form-row"><label for="subject">Betreff</label><input id="subject" name="subject" type="text"></div>
           <div class="form-row"><label for="message">Nachricht</label><textarea id="message" name="message" rows="7" required></textarea></div>

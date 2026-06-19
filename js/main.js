@@ -47,18 +47,28 @@
   const form = document.getElementById("contact-form");
   if (form) {
     form.addEventListener("submit", (event) => {
-      event.preventDefault();
       const data = new FormData(form);
       const name = String(data.get("name") || "").trim();
       const email = String(data.get("email") || "").trim();
       const phone = String(data.get("phone") || "").trim();
       const subjectValue = String(data.get("subject") || "Anfrage zur pädagogischen Begleitung").trim();
       const message = String(data.get("message") || "").trim();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
       if (!name || !email || !message) {
+        event.preventDefault();
         window.alert("Bitte füllen Sie Name, E-Mail und Nachricht aus.");
         return;
       }
+
+      if (!emailPattern.test(email)) {
+        event.preventDefault();
+        window.alert("Bitte geben Sie eine gültige E-Mail-Adresse ein.");
+        return;
+      }
+
+      if (form.hasAttribute("action")) return;
+      event.preventDefault();
 
       const subject = `${subjectValue} - ${name}`;
       const body = [`Name: ${name}`, `E-Mail: ${email}`, phone ? `Telefon: ${phone}` : "Telefon: nicht angegeben", "", message].join("\n");
