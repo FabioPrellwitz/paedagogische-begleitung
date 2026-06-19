@@ -423,7 +423,10 @@ h3 { font-size: clamp(1.25rem, 2.4vw, 1.7rem); line-height: 1.18; }
   font-size: 0.95rem;
 }
 .subhero--portrait .subhero__text { align-self: start; padding-top: clamp(1rem, 2.5vw, 2rem); }
-.subhero--portrait .subhero__text h1 { font-size: clamp(2.65rem, 6vw, 4.7rem); }
+.subhero--portrait .subhero__text h1 {
+  font-size: clamp(2.65rem, 6vw, 4.7rem);
+  hyphens: none;
+}
 .subhero--portrait .subhero__text p { max-width: 620px; }
 .portrait-panel img { aspect-ratio: 4 / 5; object-position: center top; }
 .subhero--portrait .subhero-grid {
@@ -842,6 +845,10 @@ input:focus, textarea:focus { outline: 3px solid rgba(184,143,114,0.22); border-
   .hero__content { width: min(100% - 4rem, 1120px); }
 }
 @media (max-width: 767px) {
+  .contact-page .subhero h1 {
+    font-size: clamp(1.85rem, 9vw, 2.35rem);
+    white-space: normal;
+  }
   .intro-section .section-heading h2 {
     font-size: clamp(1.95rem, 8.2vw, 2.25rem);
     line-height: 1.08;
