@@ -11,30 +11,44 @@
   <header class="site-header">
     <div class="nav-shell">
       <a class="brand" href="index.html" aria-label="Startseite"><span class="brand__name">Pädagogische Begleitung</span><span class="brand__subline">Kinder und Jugendliche</span></a>
-      <nav class="desktop-nav" aria-label="Hauptnavigation"><a href="index.html">Startseite</a><a href="about.html">Über mich</a><a href="partners.html">Mein Kooperationspartner</a><a href="services.html">Angebot</a><a class="is-active" href="contact.html">Kontakt</a></nav>
+      <nav class="desktop-nav" aria-label="Hauptnavigation"><a href="index.html">Startseite</a><a href="about.html">Über mich</a><a href="services.html">Angebot</a><a class="is-active" href="contact.html">Kontakt</a></nav>
       <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
     </div>
-    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile Navigation"><a href="index.html">Startseite</a><a href="about.html">Über mich</a><a href="partners.html">Mein Kooperationspartner</a><a href="services.html">Angebot</a><a class="is-active" href="contact.html">Kontakt</a></nav>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile Navigation"><a href="index.html">Startseite</a><a href="about.html">Über mich</a><a href="services.html">Angebot</a><a class="is-active" href="contact.html">Kontakt</a></nav>
   </header>
 
   <main>
     <section class="subhero subhero--simple">
-      <div class="container narrow reveal"><p class="eyebrow">Kontakt</p><h1>Ein ruhiger erster Schritt.</h1><p class="lead">Schreiben Sie mir gerne, worum es geht. Ich melde mich zeitnah zurück und wir besprechen, ob und wie eine Begleitung sinnvoll sein kann.</p></div>
+      <div class="container narrow reveal"><p class="eyebrow">Kontakt</p><h1>Ein ruhiger erster Schritt.</h1><p class="lead">Jede Situation ist anders. Deshalb nehme ich mir Zeit, Ihr Anliegen kennenzulernen und gemeinsam mit Ihnen zu schauen, welche Unterstützung sinnvoll sein kann.</p></div>
     </section>
 
     <section class="section contact-form-section">
-      <div class="container contact-stack">
+      <div class="container contact-entry-panel">
+        <div class="contact-intro reveal">
+          <div class="contact-intro__body">
+            <h2>Sie müssen Ihr Anliegen noch nicht perfekt formulieren.</h2>
+            <p>Ein paar Sätze zur aktuellen Situation reichen aus. Alles Weitere können wir gemeinsam im Gespräch klären.</p>
+            <figure class="contact-photo">
+              <img src="assets/images/paedagogin-mit-hund.png" alt="Pädagogin mit Hund in ruhiger natürlicher Umgebung">
+            </figure>
+          </div>
+        </div>
+
         <form class="contact-form reveal" id="contact-form" action="https://formsubmit.co/fabio26012809@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="Neue Anfrage über die Website">
           <input type="hidden" name="_captcha" value="false">
           <h2>Nachricht schreiben</h2>
           <div class="form-row"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
           <div class="form-row"><label for="email">E-Mail</label><input id="email" name="email" type="email" autocomplete="email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" required></div>
-          <div class="form-row"><label for="phone">Telefon (Optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="form-row"><label for="phone">Telefon (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
           <div class="form-row"><label for="subject">Betreff</label><input id="subject" name="subject" type="text"></div>
-          <div class="form-row"><label for="message">Nachricht</label><textarea id="message" name="message" rows="7" required></textarea></div>
+          <div class="form-row"><label for="message">Worum geht es?</label><textarea id="message" name="message" rows="7" placeholder="Was beschäftigt Sie oder Ihr Kind aktuell?" required></textarea></div>
           <button class="btn btn--primary" type="submit">Kontakt aufnehmen</button>
-          <p class="form-note">Ihre Angaben werden vertraulich behandelt. Hinweise finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+          <p class="form-note">Ihre Nachricht wird vertraulich behandelt. Ich melde mich in der Regel innerhalb weniger Werktage zurück. Hinweise finden Sie in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+          <div class="contact-mini">
+            <span>Sie erreichen mich auch per E-Mail:</span>
+            <a href="mailto:kontakt@paedagogin.de">kontakt@paedagogin.de</a>
+          </div>
         </form>
       </div>
     </section>
@@ -42,10 +56,10 @@
     <section class="section section--soft">
       <div class="container contact-stack">
         <div class="section-heading section-heading--center reveal"><p class="eyebrow">Ablauf</p><h2>Was nach Ihrer Anfrage passiert.</h2></div>
-        <div class="faq-list reveal">
-          <article><h3>Rückmeldung</h3><p>Ich antworte auf Ihre Anfrage und kläre offene organisatorische Fragen.</p></article>
-          <article><h3>Erstes Gespräch</h3><p>Wir sprechen über die aktuelle Situation, das Anliegen und mögliche Erwartungen an eine Begleitung.</p></article>
-          <article><h3>Gemeinsame Entscheidung</h3><p>Wenn es fachlich und persönlich passt, vereinbaren wir den Rahmen für die weitere Zusammenarbeit.</p></article>
+        <div class="faq-list contact-process reveal">
+          <article><span>01</span><h3>Persönliche Rückmeldung</h3><p>Ich antworte auf Ihre Anfrage und kläre offene organisatorische Fragen in Ruhe.</p></article>
+          <article><span>02</span><h3>Ruhiges Erstgespräch</h3><p>Wir sprechen über die aktuelle Situation, Ihr Anliegen und mögliche Erwartungen an eine Begleitung.</p></article>
+          <article><span>03</span><h3>Gemeinsame Einschätzung</h3><p>Wenn es fachlich und persönlich passt, vereinbaren wir den Rahmen für die weitere Zusammenarbeit.</p></article>
         </div>
       </div>
     </section>
